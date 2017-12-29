@@ -7,7 +7,7 @@
   "module": "./src/index.js",
 
   "scripts": {
-    "build": "babel esm --out-dir cjs",
+    "build": "babel src --out-dir lib",
     "prepublishOnly": "npm run build",
     "test": "ava"
   },
