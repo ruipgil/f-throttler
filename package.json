@@ -1,0 +1,44 @@
+{
+  "name": "f-throttle",
+  "version": "1.0.0",
+  "description": "Throttles function calls",
+
+  "main": "./lib/index.js",
+  "module": "./src/index.js",
+
+  "scripts": {
+    "build": "babel esm --out-dir cjs",
+    "prepublishOnly": "npm run build",
+    "test": "ava"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "ava": "^0.21.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-register": "^6.24.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ruipgil/f-throttle"
+  },
+  "author": "Rui Gil",
+  "license": "MIT"
+}
