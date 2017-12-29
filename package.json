@@ -1,5 +1,5 @@
 {
-  "name": "f-throttle",
+  "name": "f-throttler",
   "version": "1.0.0",
   "description": "Throttles function calls",
 
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ruipgil/f-throttle"
+    "url": "git://github.com/ruipgil/f-throttler"
   },
   "author": "Rui Gil",
   "license": "MIT"
